@@ -4,7 +4,7 @@
   "description": "Full-fledged authentication component with React and Firebase",
   "main": "build/index.js",
   "scripts": {
-    "build": "babel lib -d build && node ./scripts/build-dist",
+    "build": "babel lib -d build",
     "build:watch": "babel lib -w -d build",
     "lint": "eslint lib/**; exit 0",
     "lint:watch": "esw -w lib/**",
@@ -20,7 +20,7 @@
     "url": "https://github.com/jkoontz2010/firebase-full-auth/issues"
   },
   "homepage": "https://github.com/jkoontz2010/firebase-full-auth#readme",
-  "dependencies": {
+  "devDependencies": {
     "babel-core": "^6.24.1",
     "babel-eslint": "^7.2.3",
     "babel-preset-es2015": "^6.24.1",
