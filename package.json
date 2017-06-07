@@ -1,10 +1,11 @@
 {
-  "name": "firebase-full-auth",
-  "version": "0.0.1",
+  "name": "react-firebase-full-auth",
+  "version": "0.1.0",
   "description": "Full-fledged authentication component with React and Firebase",
   "main": "build/index.js",
   "scripts": {
     "build": "babel lib -d build && node ./scripts/build-dist",
+    "build:watch": "babel lib -w -d build",
     "lint": "eslint lib/**; exit 0",
     "lint:watch": "esw -w lib/**",
     "prepublish": "npm run build"
