@@ -4,8 +4,8 @@
   "description": "Full-fledged authentication component with React and Firebase",
   "main": "build/index.js",
   "scripts": {
-    "build": "babel lib -d build && node ./scripts/build-dist",
-    "build:watch": "babel lib -w -d build",
+    "build": "babel lib -d build && node ./scripts/build-dist && ncp lib/styles build/styles",
+    "build:watch": "babel lib -w -d build && node ./scripts/build-dist && ncp lib/styles build/styles",
     "lint": "eslint lib/**; exit 0",
     "lint:watch": "esw -w lib/**",
     "prepublish": "npm run build"
@@ -31,6 +31,7 @@
     "eslint-plugin-jsx-a11y": "^5.0.3",
     "eslint-plugin-react": "^7.0.1",
     "eslint-watch": "^3.1.0",
+    "ncp": "^2.0.0",
     "node-sass": "^4.5.3",
     "prop-types": "^15.5.10",
     "react": "^15.5.4",
