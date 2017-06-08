@@ -1,16 +1,9 @@
 
-@import "_variables.scss";
+@import "variables";
+@import "buttons/buttons";
+@import "forms/forms";
 
 .primary-input {
     padding: 40px;
     outline: 1px solid;
-}
-
-.button-primary {
-    padding: 20px 10px;
-    border: none;
-    border-radius: 3px;
-    background-color: $primary-btn-color;
-    color: $primary-btn-font-color;
-
 }

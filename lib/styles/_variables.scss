@@ -1,2 +1,18 @@
-$primary-btn-color: green !default;
+$primary-color: #008CBA;
+$secondary-color: #e7e7e7;
+$alert-color: #f04124;
+$success-color: #43AC6A;
+$warning-color: #f08a24;
+$info-color: #a0d3e8;
+
+// We use these to make sure border radius matches.
+$global-radius: 3px;
+$global-rounded: 1000px;
+
+// We use these to control inset shadow shiny edges and depressions.
+$shiny-edge-size: 0 1px 0;
+$shiny-edge-color: rgba(#fff, .5);
+$shiny-edge-active-color: rgba(#000, .2);
+
+$primary-btn-color: blue !default;
 $primary-btn-font-color: white !default;

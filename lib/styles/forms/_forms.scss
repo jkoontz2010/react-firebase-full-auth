@@ -1,0 +1,11 @@
+.form__submit {
+    float: right;
+}
+
+.form__error {
+    color: red;
+
+    &--hidden {
+        display: none;
+    }
+}
