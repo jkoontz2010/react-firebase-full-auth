@@ -1,6 +1,6 @@
 import ValidatingInput from '../lib/components/ValidatingInput';
 import React from 'react';
-import { mount } from 'enzyme';
+import { mount, shallow } from 'enzyme';
 
 describe('ValidatingInput', () => {
 
@@ -11,10 +11,16 @@ describe('ValidatingInput', () => {
     })
 
     it('renders a text input', () => {
-        expect(wrapper.length).toEqual(1);
+        expect(wrapper.find('input').length).toEqual(1);
     })
 
-    it('displays errors for a field after blur', () => {
-        // form__error
+    it('displays errors for a field only after blur', () => {
+
+        const errorWrapper = shallow(<ValidatingInput errors={'error'} />)
+        
+        expect(errorWrapper.find('.form__error').length).toEqual(0);
+        errorWrapper.find('input').simulate('blur');
+        expect(errorWrapper.find('.form__error').length).toEqual(1);
+
     })
 });
