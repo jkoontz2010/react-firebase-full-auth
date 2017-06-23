@@ -20,12 +20,4 @@ describe('SignupForm', () => {
         expect(wrapper.find('[name="password"]').length).toEqual(1);
     })
 
-    it('does not allow submission when processing prior submission', () => {
-        const submitButton = wrapper.find('button [type="submit"]');
-  
-        submitButton.simulate('click');
-        expect(submitButton.props().disabled).toEqual(true);
-
-    })
-
 });
